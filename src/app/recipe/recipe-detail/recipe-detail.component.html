@@ -1,0 +1,36 @@
+<div class="row">
+<h2>Recipe Name</h2>
+</div>
+<div class="row mb-2">
+<div class="dropdown show">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   Manage
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" (click)="addRecipeIngredients(selectedSingleRecipe.ingredients)" >Add to Shopping list</a>
+    <a class="dropdown-item" href="#"> - </a>
+    <a class="dropdown-item" href="#"> - </a>
+  </div>
+</div>
+
+
+</div>
+<div class="row">
+<div class="card" style="width: 100%">
+  <img [src]="selectedSingleRecipe.imagePath" class="card-img-top" alt="{{ selectedSingleRecipe.name}} image ">
+  <div class="card-body">
+    <h5 class="card-title">{{ selectedSingleRecipe.name }}</h5>
+    <p class="card-text">
+      {{ selectedSingleRecipe.description }}
+    </p>
+    <h6>Ingredients List:</h6>
+    <p class="card-text" *ngFor="let item of selectedSingleRecipe.ingredients">
+      {{ item.name }} ({{ item.amount }})
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+

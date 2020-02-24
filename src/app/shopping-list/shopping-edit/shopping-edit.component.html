@@ -1,0 +1,24 @@
+<div class="row">
+
+  <form action="">
+  <div class="row">
+    <div class="col-sm-8 form-group">
+      <label class="form-group" for="ingredientName">Name</label>
+      <input class="form-control" type="text" id="ingredientName" #ingredientName>
+    </div>
+    <div class="col-sm-4 form-group">
+      <label class="form-group" for="amount">Amount</label>
+      <input class="form-control" type="number" id="amount" #amountInput>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 form-group">
+    <button class="btn btn-success mr-1" (click)="onAddItem()" type="button">Submit</button>
+    <button class="btn btn-danger mr-1" (click)="onDeleteItem()" type="button">Delete</button>
+    <button class="btn btn-warning mr-1" (click)="onResetItem()" type="button">Clear</button>
+    </div>
+  </div>
+
+  </form>
+
+</div>

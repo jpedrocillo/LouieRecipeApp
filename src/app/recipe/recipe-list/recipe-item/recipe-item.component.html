@@ -1,0 +1,12 @@
+<div class="row">
+  <a class="my-link" [routerLink]="[index,'view']" routerLinkActive="active" ><div class="media mb-2" >
+
+    <img class="align-self-center mr-3 img-responsive" [src]="recipeItem.imagePath" alt="{{ recipeItem.name }} image">
+    <div class="media-body">
+      <h5 class="mt-0">{{recipeItem.name}} ({{ recipeItem.amount}})</h5>
+      <p class="mb-0">{{ recipeItem.description }}</p>
+    </div>
+
+  </div>
+</a>
+</div>

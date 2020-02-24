@@ -1,0 +1,28 @@
+<app-header ></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div *appUnless="testUnless">
+test only for false!
+
+</div>
+
+<div [ngSwitch]="caseValue" >
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="20" >20</p>
+  <p *ngSwitchCase="30">30</p>
+  <p *ngSwitchDefault>Opps</p>
+</div>
